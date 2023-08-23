@@ -46,7 +46,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col lg:gap-[15px] gap-[4px] lg:py-0 py-[20px] xs:text-[12px] xs:py-[10px] lg:pl-[10px] pl-[20px]  ">
             <li>About Us</li>
-            <li>About Shopcart</li>
+            <li>About ShopCart</li>
             <li>Careers</li>
             <li>News & Blog</li>
             <li>Help</li>
@@ -63,7 +63,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col lg:gap-[15px] gap-[4px] lg:py-0 py-[20px] xs:text-[12px] xs:py-[10px] lg:pl-[10px] pl-[20px]  ">
             <li>Help</li>
-            <li>Shopcart Help</li>
+            <li>ShopCart Help</li>
             <li>Returns</li>
             <li>Track Orders</li>
             <li>Contact Us</li>
