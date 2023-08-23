@@ -6,6 +6,7 @@ import { AiOutlineStar, AiOutlineShopping } from "react-icons/ai";
 import { FiHeart } from "react-icons/fi";
 import { MdCloseFullscreen } from "react-icons/md";
 import { GetProductDetail } from "../Redux/Action";
+import { Notify } from "./toastNotify";
 
 export const Product = (props) => {
   const navigate = useNavigate();
@@ -127,7 +128,7 @@ export const Product = (props) => {
                 <button
                   onClick={() => {
                     // navigate(`/AddToCart`);
-                    alert("Add to cart successfully");
+                    Notify("add")
                     dispatch(AddToCartAction(value.id));
                   }}
                   className="text-[25px] w-[45px] h-[45px] rounded-full grid place-items-center translate-y-[120px] bg-slate-300 text-black hover:bg-[#ff7504] hover:text-white "

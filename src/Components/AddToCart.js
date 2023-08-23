@@ -10,6 +10,7 @@ import {
 } from "../Redux/Action";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { Notify } from "./toastNotify";
 
 export const AddToCart = (props) => {
   const navigate = useNavigate();
@@ -99,7 +100,8 @@ export const AddToCart = (props) => {
                       <BsTrash
                         onClick={() => {
                           dispatch(RemoveFromCartAction(data.id));
-                          alert("Remove successfully");
+                          // alert("Remove successfully");
+                          Notify("Remove")
                         }}
                         className="cursor-pointer"
                       />

@@ -6,7 +6,8 @@ import { GetProductDetail } from "../Redux/Action";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { AddToCartAction } from "../Redux/Action";
-export const ProductDetail = (props) => {
+import { Notify } from "./toastNotify";
+export const ProductDetail = () => {
   
   const [changeThumbnailState, setChangeThumbnailState] = useState({
     thumbnail: null,
@@ -88,8 +89,9 @@ export const ProductDetail = (props) => {
         <div className="lg:row-start-2 lg:row-end-3 h-full w-full  flex gap-[20px] justify-center items-center">
           <button
             onClick={() => {
-              alert("Add to cart successfully");
+              // alert("Add to cart successfully");
               dispatch(AddToCartAction(productDSelector.id));
+              Notify("add")
             }}
             className="lg:w-[13vw] lg:h-[3.5vw] md:w-[130px] md:h-[40px] w-[100px] h-[30px] lg:text-xl md:text-[18px] text-[15px]  rounded-[3px] bg-[#FF9F00]"
           >

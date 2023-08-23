@@ -18,45 +18,6 @@ export const HomeComponent = () => {
           </button>
         </div>
       </main>
-
-      {/* --------------------------footer start------------------------ */}
-
-      {/* <footer className="w-full sm:h-[80vh] h-[70vh]  md:h-[90vh] lg:h-screen mt-20  grid grid-rows-[37%,1%,62%]">
-        <section className="section1 bg-[#F5F7F9] h-full lg:grid-cols-6 md:grid-cols-3  grid-cols-3 xs:grid-cols-2 place-items-center  py-5   lg:px-[20px]  ">
-          <div className="bg-red-300 border  border-black  lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/topshop.png" alt="" />
-          </div>
-          <div className="bg-[#f8d32b] border border-black  lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/mango.png" alt="" />
-          </div>
-          <div className=" border border-black  lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/zara.png" alt="" />
-          </div>
-          <div className=" border border-black  lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/bershka.png" alt="" />
-          </div>
-          <div className=" border border-black  lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/asos.png" alt="" />
-          </div>
-          <div className=" border border-black lg:w-[14vw]  w-[25vw]">
-            {" "}
-            <img src="./images/river.png" alt="" />
-          </div>
-        </section>
-        <hr className="w-[95%] h-[0px] border border-gray-400 mx-auto"/>
-        <section className="w-full h-full bg-[#ffffff] grid grid-cols-[3fr,1fr,1fr,1fr,1fr] lg:p-[20px]">
-          <div className=""><img src={logo} alt="" /></div>
-          <div>shfklsdlfjsdk</div>
-          <div>shfklsdlfjsdk</div>
-          <div>shfklsdlfjsdk</div>
-          <div>shfklsdlfjsdk</div>
-        </section>
-      </footer> */}
     </div>
   );
 };
