@@ -88,12 +88,12 @@ export const AddToCart = (props) => {
                     <div className="w-full h-full flex items-center justify-center xsm:items-start xsm:justify-start xsm:row-start-2 xsm:row-end-3 xsm:col-start-2 xsm:col-end-3     xs:items-center xs:justify-start xs:row-start-2 xs:row-end-3 xs:col-start-2 xs:col-end-3">
                       {/* <span>{data.price * data.qty}₹</span> */}
                       <span>
+                        ₹ 
                         {(
                           data.price *
                           (1 - data.discountPercentage / 100) *
                           data.qty
                         ).toFixed(2)}
-                        ₹
                       </span>
                     </div>
                     <div className="w-full h-full flex items-center justify-center text-red-700 text-[22px]  xsm:justify-start  xs:justify-start">
@@ -101,7 +101,7 @@ export const AddToCart = (props) => {
                         onClick={() => {
                           dispatch(RemoveFromCartAction(data.id));
                           // alert("Remove successfully");
-                          Notify("Remove")
+                          Notify("Remove");
                         }}
                         className="cursor-pointer"
                       />

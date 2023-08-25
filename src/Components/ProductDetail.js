@@ -102,10 +102,10 @@ export const ProductDetail = () => {
           </button>
         </div>
       </section>
-      <section className="pdSection2    px-[20px] pt-[20px] h-full">
+      <section className="pdSection2    px-[20px] pt-[20px] h-full ">
         {/* ------------Product Title---------------------*/}
 
-        <div className="capitalize lg:text-[30px]">
+        <div className="capitalize lg:text-[30px] ">
           {productDSelector.title}
         </div>
 

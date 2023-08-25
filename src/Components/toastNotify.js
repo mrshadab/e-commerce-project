@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 
 export const Notify = (type) =>
 // const type=type==="add"?"Add To Cart Successfully" : "Remove from Cart Successfully";
