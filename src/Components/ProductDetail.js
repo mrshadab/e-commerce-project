@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 import { AddToCartAction } from "../Redux/Action";
 import { Notify } from "./toastNotify";
 export const ProductDetail = () => {
-  
   const [changeThumbnailState, setChangeThumbnailState] = useState({
     thumbnail: null,
     ThumbnailTrue: false,
@@ -54,7 +53,11 @@ export const ProductDetail = () => {
                   className="ProductImages w-full h-auto border border-gray-400 active:border-2 active:border-blue-800 mb-1"
                   style={{
                     border:
-                      changeThumbnailState.active === value ? " 2px solid blue " : "",
+                      changeThumbnailState.active === value ||
+                      (productDSelector.thumbnail === value &&
+                        !changeThumbnailState.active)
+                        ? "2px solid blue"
+                        : "",
                   }}
                 >
                   <img
@@ -91,7 +94,7 @@ export const ProductDetail = () => {
             onClick={() => {
               // alert("Add to cart successfully");
               dispatch(AddToCartAction(productDSelector.id));
-              Notify("add")
+              Notify("add");
             }}
             className="lg:w-[13vw] lg:h-[3.5vw] md:w-[130px] md:h-[40px] w-[100px] h-[30px] lg:text-xl md:text-[18px] text-[15px]  rounded-[3px] bg-[#FF9F00]"
           >
